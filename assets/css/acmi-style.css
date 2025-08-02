@@ -1,0 +1,75 @@
+/* General Card Styling */
+.acmi-card .card {
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    min-height: 280px;
+}
+
+.acmi-card .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.acmi-card .card .fs-1 {
+    font-size: 2.5rem !important;
+}
+
+.acmi-card .card i {
+    font-size: 2rem;
+    color: #6c757d;
+}
+
+.acmi-card .card-footer {
+    border-top: none;
+}
+
+/* Hover Shadow Utility */
+.hover-shadow:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Custom Warning Button (used in Back / Contact) */
+.btn-warning {
+    background-color: #e3c48b;
+    border-color: #e3c48b;
+    color: #000;
+}
+
+.btn-warning:hover {
+    background-color: #d1b678;
+    border-color: #d1b678;
+    color: #000;
+}
+
+/* Table Styling for Details Page */
+.table-dark th {
+    background-color: #343a40;
+    color: #fff;
+    font-weight: 600;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Responsive text & layout for mobile */
+@media (max-width: 576px) {
+    .acmi-card .card {
+        min-height: unset;
+        padding: 1rem;
+    }
+
+    .acmi-card .fs-1 {
+        font-size: 2rem !important;
+    }
+
+    .acmi-card .card i {
+        font-size: 1.5rem;
+    }
+}

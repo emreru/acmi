@@ -1,0 +1,379 @@
+/* wp-content/plugins/acmi-manager/assets/css/acmi-admin.css */
+
+/* Contact Form 7 Aircraft Lease Form Styles */
+.acmi-lease-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.acmi-form-row {
+    margin-bottom: 1.5rem;
+}
+
+.acmi-form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.acmi-form-control:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.acmi-date-range {
+    display: flex;
+    gap: 1rem;
+}
+
+.acmi-col {
+    flex: 1;
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 0.875rem;
+    color: var(--danger-color);
+    margin-top: 0.25rem;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: var(--danger-color);
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: var(--success-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .acmi-date-range {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .acmi-lease-form {
+        padding: 1rem;
+    }
+}
+
+/* Base Styles */
+.acmi-container {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --success-color: #27ae60;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --info-color: #2980b9;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --border-radius: 6px;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Card Styles */
+.acmi-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.acmi-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.acmi-card h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Table Styles */
+.acmi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.acmi-table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.acmi-table th {
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.acmi-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.acmi-table tr:last-child td {
+    border-bottom: none;
+}
+
+.acmi-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Form Styles */
+.acmi-form input[type="text"],
+.acmi-form input[type="date"],
+.acmi-form input[type="email"],
+.acmi-form input[type="password"],
+.acmi-form input[type="url"],
+.acmi-form select,
+.acmi-form textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.acmi-form input:focus,
+.acmi-form select:focus,
+.acmi-form textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.acmi-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.acmi-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Button Styles */
+.acmi-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.acmi-btn-primary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.acmi-btn-primary:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.acmi-btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.acmi-btn-danger:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+.acmi-btn-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.acmi-btn-success:hover {
+    background-color: #219653;
+    color: white;
+}
+
+.acmi-btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.acmi-btn-outline:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Status Badges */
+.acmi-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.acmi-badge-success {
+    background-color: rgba(39, 174, 96, 0.1);
+    color: var(--success-color);
+}
+
+.acmi-badge-danger {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: var(--danger-color);
+}
+
+.acmi-badge-warning {
+    background-color: rgba(243, 156, 18, 0.1);
+    color: var(--warning-color);
+}
+
+/* Grid System */
+.acmi-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.75rem;
+}
+
+.acmi-col {
+    padding: 0 0.75rem;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .acmi-row {
+        flex-direction: column;
+    }
+    
+    .acmi-col {
+        margin-bottom: 1rem;
+    }
+    
+    .acmi-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Utility Classes */
+.acmi-text-center {
+    text-align: center;
+}
+
+.acmi-mt-1 { margin-top: 0.25rem; }
+.acmi-mt-2 { margin-top: 0.5rem; }
+.acmi-mt-3 { margin-top: 1rem; }
+.acmi-mt-4 { margin-top: 1.5rem; }
+.acmi-mt-5 { margin-top: 2rem; }
+
+.acmi-mb-1 { margin-bottom: 0.25rem; }
+.acmi-mb-2 { margin-bottom: 0.5rem; }
+.acmi-mb-3 { margin-bottom: 1rem; }
+.acmi-mb-4 { margin-bottom: 1.5rem; }
+.acmi-mb-5 { margin-bottom: 2rem; }
+
+/* Specific Page Overrides */
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.notice {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.notice-success {
+    background-color: rgba(39, 174, 96, 0.1);
+    border-left: 4px solid var(--success-color);
+}
+
+.notice-warning {
+    background-color: rgba(243, 156, 18, 0.1);
+    border-left: 4px solid var(--warning-color);
+}
+
+.notice-info {
+    background-color: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid var(--secondary-color);
+}
+
+/* Image Styles */
+.acmi-img-thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    border: 1px solid #eee;
+}
+
+/* Input Group */
+.acmi-input-group {
+    display: flex;
+}
+
+.acmi-input-group input {
+    flex: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.acmi-input-group .acmi-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Icons */
+.acmi-icon {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #95a5a6;
+}
